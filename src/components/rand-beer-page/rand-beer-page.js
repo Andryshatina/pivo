@@ -49,7 +49,7 @@ const howMuch = () => {
     }
     return(
         <p className='liter'>
-            Думаю, {rand}л буде в1 самий раз
+            Думаю, {rand}л буде в самий раз
         </p>
     )
 }
