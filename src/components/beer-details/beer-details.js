@@ -6,7 +6,7 @@ const BeerDetails= ({currentBeer}) => {
     if (!title){
         return(
             <div className='select-pivo'>
-                Вибери Pivas!
+                Вибери Pivo!
             </div>
         )
     }
