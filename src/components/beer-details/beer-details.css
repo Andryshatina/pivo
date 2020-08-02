@@ -1,0 +1,45 @@
+.item-image {
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+}
+.item-details {
+    padding: 1rem;
+    background-color: #FAF9EF;
+}
+
+.item-details .item-name {
+    margin: 0 0 0 1rem;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.item-details .list-group-item {
+    background-color: #FAF9EF;
+    text-align: center;
+
+}
+.description {
+    font-size: 1rem;
+}
+.select-pivo {
+    text-align: center;
+    margin: 1rem;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 600px) {
+    .item-image {
+        margin-top: 3rem;
+    }
+    .description {
+        font-size: 0.8rem;
+    }
+    .item-details {
+        padding: 0.5rem;
+    }
+    .item-details .list-group-item {
+        font-weight: bold;
+    }
+}

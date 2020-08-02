@@ -1,17 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import App from "./components/app";
+import { Provider } from 'react-redux';
+import store from "./store";
+import ErrorBoundry from "./components/error-boundry";
+import { BtdServiceProvider } from "./btd-service-context";
+import Btd_service from "./services/btd_service";
+import { BrowserRouter as Router } from "react-router-dom";
+
+
+const btdService = new Btd_service();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+    <Provider store={store}>
+        <ErrorBoundry>
+            <BtdServiceProvider value={btdService}>
+                <Router>
+                    <App/>
+                </Router>
+            </BtdServiceProvider>
+        </ErrorBoundry>
+    </Provider>
+    , document.getElementById('root'));

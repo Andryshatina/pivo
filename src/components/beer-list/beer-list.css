@@ -1,0 +1,12 @@
+.beer-list {
+    background-color: #F5F3E0;
+    border-color: #D62828;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Lobster', cursive;
+
+}
+.item-list {
+    margin-top: 1rem;
+}

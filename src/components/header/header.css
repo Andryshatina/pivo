@@ -1,0 +1,36 @@
+.header {
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid #efedec;
+}
+.header .logo {
+    text-decoration: none;
+    font-size: 4rem;
+    font-family: 'Lobster', cursive;
+    margin-left: 20%;
+    color: #003049;
+}
+.header .btn {
+    margin: 1.2rem;
+    margin-right: 4rem;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    border-radius: 9px;
+    border-color: #D62828;
+    background-color: #EAE2B7;
+    color: #D62828;
+}
+.header .btn:hover {
+    background-color: #F0EED0;
+}
+@media screen and (max-width: 600px) {
+    .header .logo {
+        margin-left: 1rem;
+        font-size: 3rem;
+    }
+    .header .btn {
+        margin: 0.75rem;
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+}
